@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
         Model model = new Model(50, 10);
-        TableView tableView = new TableView();
-        BarChartView barChartView = new BarChartView();
-        PieChartView pieChartView = new PieChartView();
+        Observer tableView = new TableView();
+        Observer barChartView = new BarChartView();
+        Observer pieChartView = new PieChartView();
 
         model.attach(tableView);
         model.attach(barChartView);
